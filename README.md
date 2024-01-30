@@ -36,7 +36,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from matplotlib import pyplot as plt
-csv = pd.read_csv(r"C:\Users\Виталий\Downloads\Telegram Desktop\cian_parsing_result_sale_1_50_moskva_10_Dec_2023_18_25_25_942997.csv", sep=';')
+csv = pd.read_csv(r"cian_parsing_result_sale_1_50_moskva_10_Dec_2023_18_25_25_942997.csv", sep=';')
 csv['total_meters'] = csv['total_meters'].apply(np.int64)
 X = csv.drop('price',axis=1)
 y = csv['price']
